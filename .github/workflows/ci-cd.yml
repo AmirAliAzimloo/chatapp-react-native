@@ -31,7 +31,10 @@ jobs:
         run:  yarn install
 
       - name: Make gradlew executable
-        run: chmod +x ./gradlew
+        run: |
+            cd android
+            chmod +x ./gradlew
+            cd ..
                          
       - name: Build application
         run: |
