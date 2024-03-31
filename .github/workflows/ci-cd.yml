@@ -29,6 +29,9 @@ jobs:
 
       - name: Run Yarn Install
         run:  yarn install
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
                          
       - name: Build application
         run: |
